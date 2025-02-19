@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_1280.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+  font-family: "poppins", "Book Antiqua", sans-serif;
+}
+
+#intro {
+  position: absolute;
+  padding: 15px 25px;
+  background-color: black;
+  border-radius: 15px;
+  box-shadow: 0 0 10px black;
+}
+
+#weatherContainer {
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 5px black;
+  padding: 50px;
+  border-radius: 10px;
+  position: absolute;
+  visibility: hidden;
+  box-shadow: 0 0 10px black;
+  font-size: 1.5rem;
+}
+
+#weatherContainer h1 {
+  margin: 5px;
+  font-size: 42px;
+  font-family: "poppins", sans-serif;
+ 
+}
+
+#searchContainer {
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 10px;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+#searchContainer input {
+  width: 200px;
+  width: 15vw;
+  height: 5vh;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+#searchContainer button {
+  background-color: black;
+  color: white;
+  padding: 8px 15px;
+  cursor: pointer;
+
+  
+}
+
+.searchControl {
+  box-shadow: 2px 2px 5px black;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#quote {
+  font-size: 18px ;
+  width: 80%;
+  margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  #searchContainer input {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  #searchContainer input {
+    width: 120px;
+  }
+
+  #searchContainer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    justify-content: flex-end;
+  }
+}
